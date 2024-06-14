@@ -33,7 +33,7 @@ export const fn = (a, b, c) => {
       valorA--
    }
    while (valorB > 0 && valorC > 0) {
-      totalCombi.push(13, 13)
+      totalCombi.push(15, 15)
       valorB--
       valorC--
    }
