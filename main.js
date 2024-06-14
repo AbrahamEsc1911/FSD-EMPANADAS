@@ -10,16 +10,16 @@ export const fn = (a, b, c) => {
    let totalCombi = [];
 
    if (a < 0 || b < 0 || c < 0) {
-      throw new Error('Parameter is not a number!')
+      throw new Error('The parameter cannot be negative!')
    }
    if ((a + b + c) > 40) {
-      throw new Error('please, add a number less than 40')
+      throw new Error('input a number that is less than 40')
    }
    if ((a + b + c) % 3 != 0) {
-      throw new Error('Parameter is not a number!')
+      throw new Error('The values you have entered are not divisible by 3!')
    }
    if (isNaN(a) || isNaN(b) || isNaN(c)) {
-      throw new Error('Parameter is not a number!')
+      throw new Error('Enter a numerical value!')
    }
    while (valorA > 0 && valorC > 0) {
       totalCombi.push(14, 14)
