@@ -1,4 +1,4 @@
-# Compra de empanadas
+# Compra de empanadas 
 
 ## Enunciado del problema
 
@@ -36,6 +36,21 @@ Por cada conjunto de entrada, retornar un único entero: la mínima cantidad de 
 | 3, 3, 0     | 26          |
 | 2, 0, 1     | 14          |
 | 9, 10, 11   | 142         |
+
+
+## Proceso de Resolucion del problema
+
+
+Durante el proceso de resolución del problema, se toma inicialmente un espacio en donde se plantea sobre papel y lápiz cuál puede ser la solución más eficiente antes de esta situación y que satisfaga plenamente la solicitud; así pues, se exploran múltiples caminos, entre estos se revisa si priorizar la agrupación por precios sin intervenir demasiado en las combinaciones podría llegar a la resolución satisfactoria, pero en general se obtienen peores datos, por ende más a pagar, así que entre unas posibles resoluciones y otras se llegó a la definitiva, una vez se define el modelo estructurado se procede a programar la función.
+
+La función tiene tres fases esenciales:
+1. Verificaciones iniciales, donde se valida que los datos ingresados cumplan unos requerimientos mínimos, como son: que la suma de a + b + c no sea mayor a 40 y esta suma también tiene que ser múltiplo de 3, también que no puede haber números negativos en los datos de entrada y, por último, que los valores ingresados sean exclusivamente números.
+2. Una vez obtenidos los datos de entrada y verificados que cumplen con los requisitos mínimos, se estructura un sistema que efectúa todas las combinaciones posibles. Cuando no hay más combinaciones posibles, pero aún quedan valores por incluir, se adicionan con su valor real (valor sin combinar). Cada uno de estos datos se almacena en un array, que posteriormente será organizado de mayor a menor. Esta parte es fundamental porque es lo que nos permitirá poder asegurarnos de que siempre se van a tomar el mayor número posible.
+3. Una vez que se tiene el array con todos los valores, se itera sobre sí buscando el valor cada 3, con el objetivo de dividir en grupos de tres, lo cual corresponde a lo solicitado en el enunciado del problema. Estos nuevos valores obtenidos se almacenan en un array nuevo para posteriormente ser sumados; este valor resultante será el total a pagar.
+
+
+A continuación un diagrama de su resolución.
+![Exlanation-image](./img/problem-explanation.jpg)
 
 
 ## Instrucciones de uso
